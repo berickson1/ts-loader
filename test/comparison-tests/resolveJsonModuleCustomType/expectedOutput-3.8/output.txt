@@ -1,0 +1,16 @@
+      Asset      Size  Chunks  Chunk Names
+  bundle.js  1.06 KiB       0  main
+../app.d.ts  11 bytes          
+Entrypoint main = bundle.js
+[0] ./app.ts 180 bytes {0} [built] [1 error]
+[1] ./file.json 20 bytes {0} [built]
+[2] ./my-other-files/file.json 20 bytes {0} [built]
+
+WARNING in configuration
+The 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.
+You can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/concepts/mode/
+
+ERROR in app.ts
+./app.ts
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mapp.ts(5,23)[39m[22m
+[1m[31m      TS2339: Property 'bar' does not exist on type '{ foo: string; }'.[39m[22m
